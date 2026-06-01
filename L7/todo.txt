@@ -1,7 +1,6 @@
-- Afegir temperatures a cada etapa del rentat.
-
-- Afegir missatges de debug per l'usart
-- Canviar gràfica temperatura perquè comenci plena (i sino s'actualitza fora de la pantalla afegir-ho també)
+- Afegir funcionalitat ECO
+- Afegir missatges de debug per l'usart (sobretot el de l'hora)
+- Canviar gràfica temperatura perquè comenci plena I que s'actualitzi a la pàgina de procés rentats
 
 
 Opcional:
