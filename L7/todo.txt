@@ -1,0 +1,8 @@
+- Afegir temperatures a cada etapa del rentat.
+
+- Afegir missatges de debug per l'usart
+- Canviar gràfica temperatura perquè comenci plena (i sino s'actualitza fora de la pantalla afegir-ho també)
+
+
+Opcional:
+- Enviar comandes per debug teclat (canvi de pantalles directe, etc.)
