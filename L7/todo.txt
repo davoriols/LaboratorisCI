@@ -1,7 +1,8 @@
 - Afegir funcionalitat ECO
-- Afegir missatges de debug per l'usart (sobretot el de l'hora)
-- botons antirebot
 - Canviar gràfica temperatura perquè comenci plena I que s'actualitzi a la pàgina de procés rentats
+
+- Afegir missatges de debug per l'usart (sobretot el de l'hora)
+- Afegir comentaris al codi
 
 
 Opcional:
