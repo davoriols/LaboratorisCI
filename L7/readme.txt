@@ -20,7 +20,8 @@ De totes maneres es pot trobar adjunt un diagrama amb la navegació de menús.
 ---Característiques---
 Totes les funcionalitats demanades a l'enunciat s'han implementat amb èxit.
 A continuació s'expliquen modificacions i/o altres funcionalitats del projecte:
-
+ - Com s'ha esmentat a la secció anterior, la navegació de menús ha sigut modificada i adaptada per una experiència més còmode per a l'usuari.
+ - S'ha implementat 
 
 ---Implementació tècnica---
 S'ha optat per una implementació modular, això permet la possible expansió del projecte en un futur sense impedir que les funcionalitats ja implementades deixen de funcionar.
@@ -32,4 +33,4 @@ Finalment, la unió entre la lògica i l'escriptura per pantalla es fa principal
 En el main s'inicialitzen tots els mòduls, es defineix la funció de la rutina del servei a la interrupció i s'implementa el bucle principal:
 1. Es llegeix l'entrada de l'usuari.
 2. S'executa la lògica segons l'entrada i la pantalla.
-3. S'actualitza la sortida per pantalla segons la lògics executada.
+3. S'actualitza la sortida per pantalla segons la lògica executada.
