@@ -89,5 +89,13 @@ En el main s'inicialitzen tots els mòduls, es defineix la funció de la rutina 
 2. S'executa la lògica segons l'entrada i la pantalla.
 3. S'actualitza la sortida per pantalla segons la lògica executada.
 
+
+## Problemes trobats
+
+Al llarg del desenvolupament del projecte ens vam trobar amb molts problemes, la majoria no van suposar un gran obstacle, eren petits errors relacionats amb la PIC que s'anaven solucionant poc a poc. Tot i això, va haver-hi un problema que va destacar durant tot el desenvolupament del projecte, aconseguir una codi ben modularitzat i estructurat.
+
+Des de les primeres versions de la pràctica L5 (individual), vam intentar mantenir un codi estructurat i modular per a que fos fàcil expandir-lo de cara a aquesta pràctica. Tot i així, era molt difícil de seguir avançant en el projecte sense saber quins requeriments necessitariem en el futur. És per això que el codi va requerir de diverses refactoritzacions durant el desenvolupament del projecte, una tasca difícil i molt precisa, per assegurar-nos que no se'ns anés tot el projecte en orris.
+
 ## Crèdits
+
 Aquest projecte ha estat desenvolupat per [David Oriols](https://github.com/davoriols) i [Miquel Villarroya](https://github.com/MiquelVillarroya) com a part del currículum d'Interfície de Computadors del Grau en Enginyeria Informàtica de la FIB-UPC.
