@@ -44,7 +44,7 @@ A continuació s'expliquen modificacions i/o altres funcionalitats del projecte:
 
 ## Implementació tècnica
 
-S'ha optat per una implementació modular, això permet la possible expansió del projecte en un futur sense impedir que les funcionalitats ja implementades deixen de funcionar.
+S'ha optat per una implementació modular, això permet la possible expansió del projecte en un futur sense impedir que les funcionalitats ja implementades deixin de funcionar.
 
 
 ```text
@@ -80,7 +80,8 @@ Per una banda, diferents mòduls implementen funcionalitats aïllades del projec
 Per altra banda el mòdul 'ui' implementa funcions auxiliars d'escriptura per la pantalla GLCD.
 Finalment, la unió entre la lògica i l'escriptura per pantalla es fa principalment en el mòdul 'Screen', un dels fitxers més importants del projecte.
 
-'Screen' ens dona una traducció entre el estat de la rentadora i el contingut que hem de mostrar en pantalla. I a la viceversa ens tradueix la entrada del usuari en les modificacions corresponents a l'estat de la rentadora. 
+'Screen' ens dona una traducció entre la lògica (clock i washer) i el contingut que hem de mostrar en pantalla.
+També fa el procés a l'invrevés, ens tradueix l'entrada del usuari en les modificacions corresponents a l'estat de la rentadora i del rellotge. 
 
 En el main s'inicialitzen tots els mòduls, es defineix la funció de la rutina del servei a la interrupció i s'implementa el bucle principal:
 
