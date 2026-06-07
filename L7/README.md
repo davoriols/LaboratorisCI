@@ -8,11 +8,12 @@ Els controls consten de 4 botons: les 4 direccions cardinals (esquerre, dreta, d
 Els botons estan col·locats en forma de creueta en el Proteus pel seu ús intuïtiu, el botó de confirmar està just a sota la creueta.
 
 Alternativament es pot controlar per terminal de la següent manera:
-dalt - w
-esquerra - a
-baix - s
-dreta - d
-confirmar - e
+- dalt - w
+- esquerra - a
+- baix - s
+- dreta - d
+- confirmar - e
+
 
 S'ha decidit dissenyar una versió alternativa per la navegació de menús que hauria de ser molt intuïtiva per l'usuari:
 Des del menú principal es podria accedir a tres submenús:
@@ -33,7 +34,9 @@ A continuació s'expliquen modificacions i/o altres funcionalitats del projecte:
 
 - Com s'ha esmentat a la secció anterior, la navegació de menús ha sigut modificada i adaptada per una experiència més còmode per a l'usuari.
 - S'ha implementat la llibreria "screens.h" que ens dona una capa d'abstracció a l'hora de tractar cada estat de la rentadora així com facilitar la implementació de futurs estats nous. Més detalls a la [implementació tècnica](##Implementació-tècnica).
-- El grafic de temperatura mostra els valors des de 0ºC fins a 50ºC. Per no ocupar molta memoria, fem servir la LCD com a memoria. Es a dir, abans d'escriure un nou valor a la grafica movem tots els punts anteriors un pixel a la dreta. ![grafic temperatura](GraficTemp.png)
+- El grafic de temperatura mostra els valors des de 0ºC fins a 50ºC. Per no ocupar molta memoria, fem servir la LCD com a memoria. És a dir, abans d'escriure un nou valor a la grafica movem tots els punts anteriors un pixel a la dreta. ![grafic temperatura](GraficTemp.png)
+- Quan canviem la hora, per garantir una configuració correcta, el rellotge no compte el temps quan estem modificant l'hora. En la imatge següent el rellotge està parat ja que l'estem configurant, mentre que en la resta de pantalles el rellotge mesura el pas del temps. 
+![menu configuració hora](MenuHora.png)
 
 
 
@@ -75,6 +78,8 @@ L7-Rentatora/
 Per una banda, diferents mòduls implementen funcionalitats aïllades del projecte (comunicació USART, convertidor ADC, botons, rellotge, PWM, washer, GLCD).
 Per altra banda el mòdul 'ui' implementa funcions auxiliars d'escriptura per la pantalla GLCD.
 Finalment, la unió entre la lògica i l'escriptura per pantalla es fa principalment en el mòdul 'Screen', un dels fitxers més importants del projecte.
+
+'Screen' ens dona una traducció entre el estat de la rentadora i el contingut que hem de mostrar en pantalla. I a la viceversa ens tradueix la entrada del usuari en les modificacions corresponents a l'estat de la rentadora. 
 
 En el main s'inicialitzen tots els mòduls, es defineix la funció de la rutina del servei a la interrupció i s'implementa el bucle principal:
 
