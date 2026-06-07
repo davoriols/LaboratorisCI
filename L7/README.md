@@ -1,6 +1,7 @@
 # L7 Projecte Rentadora
 
 Projecte corresponent al L7 de l'assignatura de CI, on desenvolupem els menús que controlen la rentadora així com totes les seves etapes del rentat.
+[Link al github del projecte](https://github.com/davoriols/LaboratorisCI/tree/main/L7)
 
 ## Utilització
 
