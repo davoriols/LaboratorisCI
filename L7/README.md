@@ -33,7 +33,7 @@ Totes les funcionalitats demanades a l'enunciat s'han implementat amb èxit.
 A continuació s'expliquen modificacions i/o altres funcionalitats del projecte:
 
 - Com s'ha esmentat a la secció anterior, la navegació de menús ha sigut modificada i adaptada per una experiència més còmode per a l'usuari.
-- S'ha implementat la llibreria "screens.h" que ens dona una capa d'abstracció a l'hora de tractar cada estat de la rentadora així com facilitar la implementació de futurs estats nous. Més detalls a la [implementació tècnica](##Implementació-tècnica).
+- S'ha implementat la llibreria "screens.h" que ens dona una capa d'abstracció a l'hora de tractar cada estat de la rentadora així com facilitar la implementació de futurs estats nous. Més detalls a la [implementació tècnica](#Implementació-tècnica).
 - El grafic de temperatura mostra els valors des de 0ºC fins a 50ºC. Per no ocupar molta memoria, fem servir la LCD com a memoria. És a dir, abans d'escriure un nou valor a la grafica movem tots els punts anteriors un pixel a la dreta. ![grafic temperatura](GraficTemp.png)
 - Quan canviem la hora, per garantir una configuració correcta, el rellotge no compte el temps quan estem modificant l'hora. En la imatge següent el rellotge està parat ja que l'estem configurant, mentre que en la resta de pantalles el rellotge mesura el pas del temps. 
 ![menu configuració hora](MenuHora.png)
@@ -87,3 +87,5 @@ En el main s'inicialitzen tots els mòduls, es defineix la funció de la rutina 
 2. S'executa la lògica segons l'entrada i la pantalla.
 3. S'actualitza la sortida per pantalla segons la lògica executada.
 
+## Crèdits
+Aquest projecte ha estat desenvolupat per [David Oriols](https://github.com/davoriols) i [Miquel Villarroya](https://github.com/MiquelVillarroya) com a part del currículum d'Interfície de Computadors del Grau en Enginyeria Informàtica de la FIB-UPC.
